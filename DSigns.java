@@ -1,6 +1,6 @@
-// Allows signs to push commands - As OP you can create them by adding [CMD] at the first line. Type the
-// command in the second line. After that TAP the sign and DONE. The sign listens for hits as Player
-//CASE SENSITIVE
+// Original code allows signs to push commands - As OP you can create them by adding [CMD] at the first line. Type the
+// command in the second line. After that TAP the sign and DONE. The sign listens for hits as Player.
+// Edited to change the contents of a sign based on variables assigned in the Answers class.
 
 package Events;
 
@@ -47,6 +47,7 @@ public class CommandSigns extends PluginBase implements Listener {
                     if (signtext.length > 1) {
                         line1 = signtext[0];
                         line2 = signtext[1];
+                        // Can the below be done using switch instead? Feel like it would be neater.
                         if (line1.equals("[CMD]") && p.isOp()) {
                             bes.setText(new String[]{"§a§c§e§c§b§r[§a§c§e§c§bCommand§r]", "§a" + line2});
                         }
