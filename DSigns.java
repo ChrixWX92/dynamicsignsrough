@@ -1,6 +1,6 @@
-// Original code allows signs to push commands - As OP you can create them by adding [CMD] at the first line. Type the
-// command in the second line. After that TAP the sign and DONE. The sign listens for hits as Player.
-// Edited to change the contents of a sign based on variables assigned in the Answers class.
+/* Original code allows signs to push commands - As OP you can create them by adding [CMD] at the first line.
+Type the command in the second line. After that TAP the sign and DONE. The sign listens for hits as Player.
+Edited to change the contents of a sign based on variables assigned in the Answers class. */
 
 package Events;
 
